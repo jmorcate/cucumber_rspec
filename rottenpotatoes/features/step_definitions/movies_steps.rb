@@ -1,12 +1,12 @@
-Given(/^the following movies exist:$/) do |table|
+Dadas(/^las siguientes películas:$/) do |table|
   # table is a Cucumber::Ast::Table
   pending # express the regexp above with the code you wish you had
 end
 
-Given(/^I am in the Rottenpotatoes Home page$/) do
+Dadas(/^que estoy en la página inicial de RottenPotatoes$/) do
   pending # express the regexp above with the code you wish you had
 end
 
-Then(/^I should view all the movies sorted by title$/) do
+Entonces(/^debería ver el listado de todas las películas$/) do
   pending # express the regexp above with the code you wish you had
 end
