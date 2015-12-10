@@ -1,22 +1,26 @@
-Feature: Listing movies.
+#language: es
+Característica: Listado de películas.
 
-    AS a movie fan
-    I WANT TO view the list of all the movies registered sorted alphabetically.
-    SO I can find a movie easily
+    COMO aficionado a las películas
+    QUIERO ver el listado de peliculas ordenado alfabéticamente.
+    PARA poder localizar una película fácilmente
     
-Scenario: Movies list
-     Given the following movies exist:
-        | title                   | rating | release_date |
-        | Aladdin                 | G      | 25-Nov-1992  |
-        | The Terminator          | R      | 26-Oct-1984  |
-        | When Harry Met Sally    | R      | 21-Jul-1989  |
-        | The Help                | PG-13  | 10-Aug-2011  |
-        | Chocolat                | PG-13  | 5-Jan-2001   |
-        | Amelie                  | R      | 25-Apr-2001  |
-        | 2001: A Space Odyssey   | G      | 6-Apr-1968   |
-        | The Incredibles         | PG     | 5-Nov-2004   |
-        | Raiders of the Lost Ark | PG     | 12-Jun-1981  |
-        | Chicken Run             | G      | 21-Jun-2000  |
+Escenario: Listado de Películas
+     Dadas las siguientes películas:
+        | título                          | clasificación | fecha_estreno |
+        | Aladdin                         | A             | 25-Nov-1992   |
+        | Terminator                      | 16            | 26-Oct-1984   |
+        | Cuando Harry encontró a Sally   | 16            | 21-Jul-1989   |
+        | Criadas y señoras               | 12            | 10-Aug-2011   |
+        | Chocolat                        | 12            | 5-Jan-2001    |
+        | Amelie                          | 16            | 25-Apr-2001   |
+        | 2001: Una odisea del espacio    | A             | 6-Apr-1968    |
+        | Los Increíbles                  | 7             | 5-Nov-2004    |
+        | En busca del arca perdida       | 7             | 12-Jun-1981   |
+        | Chicken Run:Evasión en la granja| A             | 21-Jun-2000   |
 
-    And I am in the Rottenpotatoes Home page
-    Then I should view all the movies sorted by title
+    Y que estoy en la página inicial de RottenPotatoes
+    Entonces debería ver el listado de todas las películas
+
+
+
